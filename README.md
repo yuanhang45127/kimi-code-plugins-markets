@@ -1,20 +1,17 @@
 [**中文**](./README.md) · [English](./README.en.md)
 
-<br>
-
-# 🧩 Kimi Plugin Market
-
-Kimi Code 社区插件市场 — 托管 & 分享 Kimi Code 插件
-
-![License](https://img.shields.io/badge/license-MIT-yellow?style=flat-square)
-![Version](https://img.shields.io/badge/version-1.0.0-blue?style=flat-square)
-![Plugins](https://img.shields.io/badge/plugins-3-brightgreen?style=flat-square)
-![Kimi Code](https://img.shields.io/badge/Kimi%20Code-%E2%9C%85-8A2BE2?style=flat-square)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-orange?style=flat-square)](./CONTRIBUTING.md)
+<h1 align="center">🧩 Kimi Plugin Market</h1>
+<p align="center">Kimi Code 社区插件市场 — 托管 & 分享 Kimi Code 插件</p>
+<p align="center">
+  <code>📦 3 个插件</code>&nbsp;
+  <code>📄 MIT 协议</code>&nbsp;
+  <code>🤝 欢迎 PR</code>&nbsp;
+  <code>✅ Kimi Code 兼容</code>
+</p>
 
 ---
 
-## 快速开始：使用市场
+## 🚀 快速开始：使用市场
 
 本仓库同时也是一个插件市场，让 Kimi Code 可以浏览和安装插件：
 
@@ -31,7 +28,7 @@ export KIMI_CODE_PLUGIN_MARKETPLACE_URL=https://codeup.aliyun.com/64e63304dba61e
 
 > 如果发布到 GitHub，将 URL 替换为 `marketplace.json` 的 raw 地址。
 
-### 可用插件
+### 📦 可用插件
 
 | 插件 | 说明 |
 |------|------|
@@ -41,36 +38,29 @@ export KIMI_CODE_PLUGIN_MARKETPLACE_URL=https://codeup.aliyun.com/64e63304dba61e
 
 ---
 
-## 仓库结构
+## 📁 仓库结构
 
 ```
 kimi-plugin-market/
-├── marketplace.json              # 市场目录（version 2）
-├── kimi.plugin.json              # 根插件 manifest（可选）
+├── marketplace.json               # 📄 市场目录（version 2）
+├── kimi.plugin.json               # 📄 根插件 manifest（可选）
 ├── skills/
 │   └── hello/
-│       └── SKILL.md              # 根插件的示例 skill
-├── plugins/                      # 所有市场插件
-│   ├── hello-world/
-│   │   ├── kimi.plugin.json      # 插件清单
-│   │   └── skills/greet/SKILL.md
-│   ├── code-reviewer/
-│   │   ├── kimi.plugin.json
-│   │   └── skills/review-guidelines/SKILL.md
-│   └── commit-writer/
-│       ├── kimi.plugin.json
-│       ├── skills/write-commit/SKILL.md
-│       └── commands/write.md     # 斜杠命令 (/commit-writer:write)
-├── SECURITY.md                   # 安全策略
-├── CONTRIBUTING.md               # 贡献指南
+│       └── SKILL.md               # 📝 根插件的示例 skill
+├── plugins/                       # 📂 所有市场插件
+│   ├── hello-world/               #    🆕 最简示例插件
+│   ├── code-reviewer/             #    🔍 代码审查助手
+│   └── commit-writer/             #    ✍️ 自动生成 commit
+├── SECURITY.md                    # 🔒 安全策略
+├── CONTRIBUTING.md                # 🤝 贡献指南
 ├── .github/
-│   └── PULL_REQUEST_TEMPLATE.md  # PR 模板
-└── README.md
+│   └── PULL_REQUEST_TEMPLATE.md   # 📋 PR 模板
+└── README.md                      # 📖 本文件
 ```
 
 ---
 
-## Marketplace 格式
+## 📋 Marketplace 格式
 
 `marketplace.json` 遵循官方 Kimi Code 规范：
 
@@ -106,7 +96,7 @@ kimi-plugin-market/
 
 ---
 
-## 插件清单 (`kimi.plugin.json`)
+## 📄 插件清单 (`kimi.plugin.json`)
 
 每个插件目录下都需要一个 `kimi.plugin.json`：
 
@@ -141,7 +131,7 @@ kimi-plugin-market/
 
 ---
 
-## 添加你自己的插件
+## ➕ 添加你自己的插件
 
 1. 在 `plugins/<你的插件>/` 下创建目录
 2. 添加 `kimi.plugin.json` 清单
@@ -162,7 +152,7 @@ kimi-plugin-market/
 
 ---
 
-## 安全
+## 🔒 安全
 
 > **⚠️ 社区插件是第三方软件，未经 Moonshot AI / Kimi Code 审核或认可。**
 
@@ -181,7 +171,7 @@ kimi-plugin-market/
 
 ---
 
-## 本地开发
+## 🛠️ 本地开发
 
 ```bash
 # 从本地路径安装插件
@@ -194,6 +184,6 @@ kimi-plugin-market/
 
 ---
 
-## 开源协议
+## 📄 开源协议
 
 本项目基于 MIT 协议开源 — 详见 [LICENSE](LICENSE) 文件。
