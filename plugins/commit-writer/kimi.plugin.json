@@ -1,0 +1,16 @@
+{
+  "name": "commit-writer",
+  "version": "1.0.0",
+  "description": "Automatically generates conventional commit messages from staged changes",
+  "keywords": ["git", "commit", "conventional-commit", "workflow"],
+  "author": "Kimi Plugin Community",
+  "skills": "./skills",
+  "commands": "./commands",
+  "interface": {
+    "displayName": "Commit Writer",
+    "shortDescription": "Automatically generates conventional commit messages from staged changes",
+    "longDescription": "Commit Writer generates clear, conventional commit messages based on your staged git changes.\n\nIt analyses the diff, identifies the type of change (feat, fix, refactor, docs, etc.), and produces a properly formatted commit message that follows the Conventional Commits specification.\n\nUsage:\n1. Stage your changes with `git add`\n2. Run `/commit-writer:write` in Kimi Code\n3. Review and apply the suggested commit message\n\nAlternatively, just tell Kimi \"write a commit message for my staged changes\".",
+    "developerName": "Kimi Plugin Community",
+    "websiteURL": "https://github.com/yuanhang45127/kimi-plugin-template"
+  }
+}

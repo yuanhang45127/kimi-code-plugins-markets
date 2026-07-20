@@ -1,0 +1,15 @@
+{
+  "name": "hello-world",
+  "version": "1.0.0",
+  "description": "A friendly greeting plugin for Kimi Code — great starting point for learning plugin development",
+  "keywords": ["hello", "greeting", "example", "tutorial"],
+  "author": "Kimi Plugin Community",
+  "skills": "./skills",
+  "interface": {
+    "displayName": "Hello World",
+    "shortDescription": "A friendly greeting plugin — great starting point for learning plugin development",
+    "longDescription": "Hello World is a simple demo plugin that introduces the basic structure of a Kimi Code plugin.\n\nIt includes a greeting skill that demonstrates:\n- Plugin manifest structure (kimi.plugin.json)\n- Skill format with YAML frontmatter\n- How skills are loaded and invoked\n\nUse this as a reference when building your own plugins.",
+    "developerName": "Kimi Plugin Community",
+    "websiteURL": "https://github.com/yuanhang45127/kimi-plugin-template"
+  }
+}

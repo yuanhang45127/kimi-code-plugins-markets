@@ -1,0 +1,24 @@
+{
+  "version": "2",
+  "description": "Community plugin marketplace for Kimi Code — add your own plugins and share with the community",
+  "plugins": [
+    {
+      "id": "hello-world",
+      "displayName": "Hello World",
+      "shortDescription": "A friendly greeting plugin — great starting point for learning plugin development",
+      "source": "./plugins/hello-world"
+    },
+    {
+      "id": "code-reviewer",
+      "displayName": "Code Reviewer",
+      "shortDescription": "Lightweight code review assistant — checks style, potential bugs, and best practices",
+      "source": "./plugins/code-reviewer"
+    },
+    {
+      "id": "commit-writer",
+      "displayName": "Commit Writer",
+      "shortDescription": "Automatically generates conventional commit messages from staged changes",
+      "source": "./plugins/commit-writer"
+    }
+  ]
+}

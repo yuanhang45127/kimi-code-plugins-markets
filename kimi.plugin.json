@@ -1,10 +1,12 @@
 {
   "name": "kimi-plugin-template",
   "version": "1.0.0",
-  "description": "A minimal Kimi Code plugin template with an example skill",
+  "description": "Community plugin marketplace and development template for Kimi Code CLI",
+  "keywords": ["kimi-code", "plugin", "marketplace", "template"],
+  "author": "Kimi Plugin Community",
   "skills": "./skills",
   "interface": {
-    "displayName": "Kimi Plugin Template",
-    "shortDescription": "Minimal template for building Kimi Code plugins"
+    "displayName": "Kimi Plugin Template & Marketplace",
+    "shortDescription": "Plugin marketplace and development template for Kimi Code CLI"
   }
 }

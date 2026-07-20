@@ -1,0 +1,19 @@
+{
+  "name": "code-reviewer",
+  "version": "1.0.0",
+  "description": "Lightweight code review assistant — checks style, potential bugs, and best practices",
+  "keywords": ["code-review", "lint", "best-practices", "quality"],
+  "author": "Kimi Plugin Community",
+  "skills": "./skills",
+  "sessionStart": {
+    "skill": "review-guidelines"
+  },
+  "interface": {
+    "displayName": "Code Reviewer",
+    "shortDescription": "Lightweight code review assistant — checks style, potential bugs, and best practices",
+    "longDescription": "Code Reviewer helps you catch common issues before submitting your pull requests.\n\nFeatures:\n- Scans for common bug patterns and anti-patterns\n- Suggests style improvements aligned with project conventions\n- Reviews commit-level changes and provides actionable feedback\n- Loads review guidelines automatically at session start\n\nSimply ask Kimi to \"review the current change\" or \"check for issues\" and the plugin will guide the review.",
+    "developerName": "Kimi Plugin Community",
+    "websiteURL": "https://github.com/yuanhang45127/kimi-plugin-template"
+  },
+  "skillInstructions": "When reviewing code, focus on: correctness first, then readability, then performance. Always explain the *why* behind each suggestion, not just the what."
+}
