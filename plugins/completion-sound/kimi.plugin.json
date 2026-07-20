@@ -1,0 +1,17 @@
+{
+  "name": "completion-sound",
+  "version": "1.0.0",
+  "description": "Play a configurable sound when the assistant finishes a response",
+  "skills": "./skills",
+  "hooks": [
+    {
+      "event": "Stop",
+      "command": "node ./hooks/play-sound.mjs",
+      "timeout": 5
+    }
+  ],
+  "interface": {
+    "displayName": "Completion Sound",
+    "shortDescription": "Configurable completion sound for assistant responses"
+  }
+}

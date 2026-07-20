@@ -8,7 +8,7 @@
 
 ![License](https://img.shields.io/badge/license-MIT-yellow)
 ![Version](https://img.shields.io/badge/version-1.0.0-blue)
-![Plugins](https://img.shields.io/badge/plugins-3-brightgreen)
+![Plugins](https://img.shields.io/badge/plugins-4-brightgreen)
 ![Kimi Code](https://img.shields.io/badge/Kimi%20Code-compatible-8A2BE2)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-orange)](./CONTRIBUTING.md)
 
@@ -35,6 +35,7 @@ export KIMI_CODE_PLUGIN_MARKETPLACE_URL=https://codeup.aliyun.com/64e63304dba61e
 | 🆕 **Hello World** | Minimal demo plugin — starting point for learning |
 | 🔍 **Code Reviewer** | Lightweight code review assistant with session-start guidelines |
 | ✍️ **Commit Writer** | Generates conventional commit messages from staged changes |
+| 🔊 **Completion Sound** | Plays a configurable sound when the assistant finishes a response |
 
 ---
 
@@ -48,7 +49,8 @@ kimi-plugin-market/
 ├── plugins/
 │   ├── hello-world/               # Demo plugin
 │   ├── code-reviewer/             # Code review assistant
-│   └── commit-writer/             # Commit message generator
+│   ├── commit-writer/             # Commit message generator
+│   └── completion-sound/          # Completion sound
 ├── SECURITY.md                    # Security policy
 ├── CONTRIBUTING.md                # Contributing guide
 └── README.md                      # This file

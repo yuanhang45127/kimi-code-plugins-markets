@@ -19,6 +19,12 @@
       "displayName": "Commit Writer",
       "shortDescription": "Automatically generates conventional commit messages from staged changes",
       "source": "./plugins/commit-writer"
+    },
+    {
+      "id": "completion-sound",
+      "displayName": "Completion Sound",
+      "shortDescription": "Play a configurable sound when the assistant finishes a response",
+      "source": "./plugins/completion-sound"
     }
   ]
 }

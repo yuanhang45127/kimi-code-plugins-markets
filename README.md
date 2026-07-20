@@ -8,7 +8,7 @@
 
 ![License](https://img.shields.io/badge/license-MIT-yellow)
 ![Version](https://img.shields.io/badge/version-1.0.0-blue)
-![Plugins](https://img.shields.io/badge/plugins-3-brightgreen)
+![Plugins](https://img.shields.io/badge/plugins-4-brightgreen)
 ![Kimi Code](https://img.shields.io/badge/Kimi%20Code-compatible-8A2BE2)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-orange)](./CONTRIBUTING.md)
 
@@ -35,6 +35,7 @@ export KIMI_CODE_PLUGIN_MARKETPLACE_URL=https://codeup.aliyun.com/64e63304dba61e
 | 🆕 **Hello World** | 最简示例插件，学习插件开发的起点 |
 | 🔍 **Code Reviewer** | 轻量代码审查助手，含 session-start 指南 |
 | ✍️ **Commit Writer** | 根据暂存变更自动生成 conventional commit 消息 |
+| 🔊 **Completion Sound** | 任务完成时播放提示音，支持自定义音效 |
 
 ---
 
@@ -48,7 +49,8 @@ kimi-plugin-market/
 ├── plugins/
 │   ├── hello-world/               # 最简示例插件
 │   ├── code-reviewer/             # 代码审查助手
-│   └── commit-writer/             # commit 消息生成器
+│   ├── commit-writer/             # commit 消息生成器
+│   └── completion-sound/          # 完成提示音
 ├── SECURITY.md                    # 安全策略
 ├── CONTRIBUTING.md                # 贡献指南
 └── README.md                      # 本文件
