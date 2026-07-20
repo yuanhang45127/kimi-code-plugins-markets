@@ -1,73 +1,75 @@
+<!-- 语言切换 / Language Switch -->
+[**中文**](./README.md) | [English](./README.en.md)
+
+---
+
 # Kimi Plugin Template & Marketplace
 
-A **Kimi Code plugin marketplace** repository — hosts community-contributed plugins and provides a reusable template for building new ones.
+**Kimi Code 插件市场仓库** — 托管社区贡献的插件，并提供开发模板供参考。
 
-Browse the [official Kimi Code docs](https://www.kimi.com/code/docs/en/) for more about the platform.
-
----
-
-## Quick Start: Using the Marketplace
-
-This repository doubles as a plugin marketplace. Point Kimi Code at it to browse and install available plugins:
-
-```bash
-# From the Kimi Code TUI
-/plugins marketplace https://raw.githubusercontent.com/yuanhang45127/kimi-plugin-template/main/marketplace.json
-```
-
-Or set the environment variable to make it the default:
-
-```bash
-export KIMI_CODE_PLUGIN_MARKETPLACE_URL=https://raw.githubusercontent.com/yuanhang45127/kimi-plugin-template/main/marketplace.json
-```
-
-> Once published to GitHub, replace the URL with the raw GitHub link to `marketplace.json`.
-
-### Available Plugins
-
-| Plugin | Description |
-|--------|-------------|
-| **Hello World** | Minimal demo plugin — great starting point for learning |
-| **Code Reviewer** | Lightweight code review assistant with session-start guidelines |
-| **Commit Writer** | Generates conventional commit messages from staged changes |
+浏览 [Kimi Code 官方文档](https://www.kimi.com/code/docs/en/) 了解平台详情。
 
 ---
 
-## Repository Structure
+## 快速开始：使用市场
+
+本仓库同时也是一个插件市场，让 Kimi Code 可以浏览和安装插件：
+
+```bash
+# 在 Kimi Code TUI 中
+/plugins marketplace https://codeup.aliyun.com/64e63304dba61e96ebf62138/kimi-plugin-market.git/raw/main/marketplace.json
+```
+
+或设置环境变量使其成为默认市场：
+
+```bash
+export KIMI_CODE_PLUGIN_MARKETPLACE_URL=https://codeup.aliyun.com/64e63304dba61e96ebf62138/kimi-plugin-market.git/raw/main/marketplace.json
+```
+
+> 如果发布到 GitHub，将 URL 替换为 `marketplace.json` 的 raw 地址。
+
+### 可用插件
+
+| 插件 | 说明 |
+|------|------|
+| **Hello World** | 最简示例插件 — 学习插件开发的起点 |
+| **Code Reviewer** | 轻量代码审查助手，含 session-start 指南 |
+| **Commit Writer** | 根据暂存变更自动生成 conventional commit 消息 |
+
+---
+
+## 仓库结构
 
 ```
-kimi-plugin-template/
-├── marketplace.json              # Marketplace catalog (version 2)
-├── kimi.plugin.json              # Root plugin manifest (optional — for this repo itself)
+kimi-plugin-market/
+├── marketplace.json              # 市场目录（version 2）
+├── kimi.plugin.json              # 根插件 manifest（可选）
 ├── skills/
 │   └── hello/
-│       └── SKILL.md              # Example skill for the root plugin
-├── plugins/                      # All marketplace plugins live here
+│       └── SKILL.md              # 根插件的示例 skill
+├── plugins/                      # 所有市场插件
 │   ├── hello-world/
-│   │   ├── kimi.plugin.json      # Plugin manifest
-│   │   └── skills/
-│   │       └── greet/
-│   │           └── SKILL.md      # Skill definition
+│   │   ├── kimi.plugin.json      # 插件清单
+│   │   └── skills/greet/SKILL.md
 │   ├── code-reviewer/
 │   │   ├── kimi.plugin.json
-│   │   └── skills/
-│   │       └── review-guidelines/
-│   │           └── SKILL.md
+│   │   └── skills/review-guidelines/SKILL.md
 │   └── commit-writer/
 │       ├── kimi.plugin.json
-│       ├── skills/
-│       │   └── write-commit/
-│       │       └── SKILL.md
-│       └── commands/
-│           └── write.md          # Slash command (/commit-writer:write)
+│       ├── skills/write-commit/SKILL.md
+│       └── commands/write.md     # 斜杠命令 (/commit-writer:write)
+├── SECURITY.md                   # 安全策略
+├── CONTRIBUTING.md               # 贡献指南
+├── .github/
+│   └── PULL_REQUEST_TEMPLATE.md  # PR 模板
 └── README.md
 ```
 
 ---
 
-## Marketplace Format
+## Marketplace 格式
 
-The `marketplace.json` follows the official Kimi Code schema:
+`marketplace.json` 遵循官方 Kimi Code 规范：
 
 ```json
 {
@@ -75,122 +77,120 @@ The `marketplace.json` follows the official Kimi Code schema:
   "plugins": [
     {
       "id": "my-plugin",
-      "displayName": "My Plugin",
-      "shortDescription": "What this plugin does",
+      "displayName": "我的插件",
+      "shortDescription": "插件的作用",
       "source": "./plugins/my-plugin"
     }
   ]
 }
 ```
 
-| Field | Description |
-|-------|-------------|
-| `version` | Must be `"2"` |
-| `plugins` | Array of plugin entries |
-| `id` | Unique plugin identifier (matches `name` in `kimi.plugin.json`) |
-| `displayName` | Human-readable name shown in the plugin manager |
-| `shortDescription` | Brief description shown in listings |
-| `source` | Path (relative to `marketplace.json`) or URL to the plugin directory |
+| 字段 | 说明 |
+|------|------|
+| `version` | 必须为 `"2"` |
+| `plugins` | 插件条目数组 |
+| `id` | 唯一标识（需匹配 `kimi.plugin.json` 中的 `name`）|
+| `displayName` | 插件管理器中显示的名称 |
+| `shortDescription` | 列表中的简短描述 |
+| `source` | 插件目录的相对路径或 URL |
 
-### Source Options
+### Source 支持的类型
 
-The `source` field supports:
-
-- **Relative path**: `"./plugins/my-plugin"` — for local development
-- **GitHub URL**: `"https://github.com/owner/repo"` — installs from a release or default branch
-- **Branch/tag URL**: `"https://github.com/owner/repo/tree/branch-name"`
-- **Zip URL**: `"https://example.com/plugin.zip"`
+- **相对路径**：`"./plugins/my-plugin"` — 本地开发用
+- **GitHub URL**：`"https://github.com/owner/repo"`
+- **分支/标签 URL**：`"https://github.com/owner/repo/tree/branch-name"`
+- **Zip URL**：`"https://example.com/plugin.zip"`
 
 ---
 
-## Plugin Manifest (`kimi.plugin.json`)
+## 插件清单 (`kimi.plugin.json`)
 
-Each plugin is a directory with a `kimi.plugin.json` manifest:
+每个插件目录下都需要一个 `kimi.plugin.json`：
 
 ```json
 {
   "name": "my-plugin",
   "version": "1.0.0",
-  "description": "What this plugin does",
+  "description": "插件功能描述",
   "keywords": ["keyword1", "keyword2"],
-  "author": "Your Name",
+  "author": "作者名",
   "homepage": "https://github.com/yourname/my-plugin",
   "skills": "./skills",
   "commands": "./commands",
   "sessionStart": {
     "skill": "my-skill-name"
   },
-  "skillInstructions": "Additional instructions appended whenever a skill from this plugin is loaded.",
+  "skillInstructions": "每次加载此插件的 skill 时附加的额外指令。",
   "interface": {
-    "displayName": "My Plugin",
-    "shortDescription": "Brief description",
-    "longDescription": "Full description shown in plugin details",
-    "developerName": "Your Name",
+    "displayName": "我的插件",
+    "shortDescription": "简短描述",
+    "longDescription": "插件详情中显示的完整描述",
+    "developerName": "作者名",
     "websiteURL": "https://github.com/yourname/my-plugin"
   }
 }
 ```
 
-Key restrictions:
-- `name` must match `[a-z0-9][a-z0-9_-]{0,63}`
-- `skills` and `commands` paths must be inside the plugin root
-- The manifest can also be placed at `.kimi-plugin/plugin.json`
+关键限制：
+- `name` 必须匹配 `[a-z0-9][a-z0-9_-]{0,63}`
+- `skills` 和 `commands` 路径必须在插件根目录内
+- 清单也可放在 `.kimi-plugin/plugin.json`
 
 ---
 
-## Adding Your Own Plugin
+## 添加你自己的插件
 
-1. Create a directory under `plugins/<your-plugin>/`
-2. Add a `kimi.plugin.json` manifest
-3. Add skills under `skills/<skill-name>/SKILL.md`
-4. Optionally add commands under `commands/<name>.md`
-5. Register it in `marketplace.json`:
+1. 在 `plugins/<你的插件>/` 下创建目录
+2. 添加 `kimi.plugin.json` 清单
+3. 在 `skills/<skill-name>/SKILL.md` 添加技能
+4. 可选：在 `commands/<name>.md` 添加斜杠命令
+5. 在 `marketplace.json` 中注册：
 
    ```json
    {
      "id": "your-plugin",
-     "displayName": "Your Plugin",
-     "shortDescription": "What it does",
+     "displayName": "你的插件",
+     "shortDescription": "它做什么",
      "source": "./plugins/your-plugin"
    }
    ```
 
-6. Submit a PR (or push directly if you're the maintainer).
+6. 提交 PR（如果你是维护者，可直接 push）。
 
 ---
 
-## Security
+## 安全
 
-> **⚠️ Community plugins are third-party software.** They are not reviewed or endorsed by Moonshot AI / Kimi Code.
+> **⚠️ 社区插件是第三方软件，未经 Moonshot AI / Kimi Code 审核或认可。**
 
-This repository implements basic safety measures to reduce risk:
+本仓库实施以下基本安全措施：
 
-- **PR review checklist** — Every new plugin is reviewed for obfuscated code, unsafe paths, suspicious network calls, and prompt injection
-- **Kimi Code's built-in sandbox** — Plugin paths are confined to the plugin root directory; hooks only run when the plugin is enabled
-- **Trust badges** — Kimi Code labels plugins from this repo as `third-party`, which requires explicit user confirmation to install
+- **PR 审查清单** — 每个新插件会检查混淆代码、不安全路径、可疑网络调用和 prompt 注入
+- **Kimi Code 内置沙箱** — 插件路径被限制在插件根目录内；hook 仅在插件启用时运行
+- **信任徽章** — Kimi Code 将此仓库的插件标记为 `third-party`，安装需要用户明确确认
 
-For the full security policy, reporting process, and review checklist, see **[SECURITY.md](./SECURITY.md)**.
+完整的安全策略和报告流程请参见 **[SECURITY.md](./SECURITY.md)**。
 
-Before installing any community plugin, consider:
-- Review the plugin's source files in this repo
-- Check what MCP servers or hooks it declares
-- Disable MCP servers you don't trust via `/plugins mcp disable <id> <server>`
+安装前建议：
+- 审查插件源码
+- 检查它声明了哪些 MCP 服务或 hook
+- 通过 `/plugins mcp disable <id> <server>` 禁用不信任的 MCP 服务
 
 ---
 
-## Local Development
+## 本地开发
 
 ```bash
-# Install a plugin from a local path
+# 从本地路径安装插件
 /plugins install ./plugins/hello-world
 /reload
 
-# Or browse the marketplace locally
+# 浏览本地市场
 /plugins marketplace ./marketplace.json
 ```
 
 ---
 
-## License
+## 开源协议
 
-This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
+本项目基于 MIT 协议开源 — 详见 [LICENSE](LICENSE) 文件。
