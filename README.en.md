@@ -2,57 +2,61 @@
 
 ---
 
-# Kimi Plugin Market
+# 🧩 Kimi Plugin Market
 
-Kimi Code Community Plugin Marketplace — Host & share Kimi Code plugins
+**Kimi Code Community Plugin Marketplace** — Host & share Kimi Code plugins
 
-`3 plugins` · `MIT License` · `PRs Welcome` · `Kimi Code Compatible`
+![License](https://img.shields.io/badge/license-MIT-yellow)
+![Version](https://img.shields.io/badge/version-1.0.0-blue)
+![Plugins](https://img.shields.io/badge/plugins-3-brightgreen)
+![Kimi Code](https://img.shields.io/badge/Kimi%20Code-compatible-8A2BE2)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-orange)](./CONTRIBUTING.md)
 
 ---
 
-## Quick Start
+## 🚀 Quick Start
 
-Load this marketplace in Kimi Code to browse and install plugins:
+Load this marketplace in Kimi Code:
 
 ```bash
-/plugins marketplace https://codeup.aliyun.com/64e63304dba61e96ebf62138/kimi-plugin-market.git/raw/main/marketplace.json
+/plugins marketplace https://codeup.aliyun.com/64e63304dba61e96ebf62138/kimi-plugin-market/-/raw/main/marketplace.json
 ```
 
 Set as default:
 
 ```bash
-export KIMI_CODE_PLUGIN_MARKETPLACE_URL=https://codeup.aliyun.com/64e63304dba61e96ebf62138/kimi-plugin-market.git/raw/main/marketplace.json
+export KIMI_CODE_PLUGIN_MARKETPLACE_URL=https://codeup.aliyun.com/64e63304dba61e96ebf62138/kimi-plugin-market/-/raw/main/marketplace.json
 ```
 
-### Available Plugins
+### 📦 Available Plugins
 
 | Plugin | Description |
 |--------|-------------|
-| **Hello World** | Minimal demo plugin — starting point for learning |
-| **Code Reviewer** | Lightweight code review assistant with session-start guidelines |
-| **Commit Writer** | Generates conventional commit messages from staged changes |
+| 🆕 **Hello World** | Minimal demo plugin — starting point for learning |
+| 🔍 **Code Reviewer** | Lightweight code review assistant with session-start guidelines |
+| ✍️ **Commit Writer** | Generates conventional commit messages from staged changes |
 
 ---
 
-## Repository Structure
+## 📁 Repository Structure
 
 ```
 kimi-plugin-market/
-├── marketplace.json           # Marketplace catalog (version 2)
-├── kimi.plugin.json           # Root plugin manifest
-├── skills/hello/SKILL.md      # Example skill
+├── marketplace.json               # Marketplace catalog (version 2)
+├── kimi.plugin.json               # Root plugin manifest
+├── skills/hello/SKILL.md          # Example skill
 ├── plugins/
-│   ├── hello-world/           # Demo plugin
-│   ├── code-reviewer/         # Code review assistant
-│   └── commit-writer/         # Commit message generator
-├── SECURITY.md                # Security policy
-├── CONTRIBUTING.md            # Contributing guide
-└── README.md                  # This file
+│   ├── hello-world/               # Demo plugin
+│   ├── code-reviewer/             # Code review assistant
+│   └── commit-writer/             # Commit message generator
+├── SECURITY.md                    # Security policy
+├── CONTRIBUTING.md                # Contributing guide
+└── README.md                      # This file
 ```
 
 ---
 
-## Adding Your Plugin
+## ➕ Adding Your Plugin
 
 1. Create `plugins/<name>/` with a `kimi.plugin.json`
 2. Register `id`, `displayName`, `source` in `marketplace.json`
@@ -62,7 +66,7 @@ See [CONTRIBUTING.md](./CONTRIBUTING.md) for format specs.
 
 ---
 
-## Security
+## 🔒 Security
 
 Community plugins are third-party software, not reviewed by Moonshot AI / Kimi Code. Before installing:
 
@@ -74,6 +78,6 @@ See **[SECURITY.md](./SECURITY.md)**
 
 ---
 
-## License
+## 📄 License
 
 [MIT](./LICENSE)
