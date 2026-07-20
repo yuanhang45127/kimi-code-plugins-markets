@@ -1,23 +1,16 @@
-<div align="center">
-
-<!-- 语言切换 / Language Switch -->
-[**中文**](./README.md) | [English](./README.en.md)
+[**中文**](./README.md) · [English](./README.en.md)
 
 <br>
 
 # 🧩 Kimi Plugin Market
 
-**Kimi Code 社区插件市场** — 托管 & 分享 Kimi Code 插件
+Kimi Code 社区插件市场 — 托管 & 分享 Kimi Code 插件
 
-<br>
-
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](./LICENSE)
-[![Version](https://img.shields.io/badge/version-1.0.0-blue.svg?style=flat-square)](./marketplace.json)
-[![Plugins](https://img.shields.io/badge/plugins-3-green.svg?style=flat-square)](#-可用插件)
-[![Kimi Code](https://img.shields.io/badge/Kimi%20Code-%E2%9C%93%20compatible-8A2BE2?style=flat-square)](https://www.kimi.com/code/docs/en/)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](./CONTRIBUTING.md)
-
-</div>
+![License](https://img.shields.io/badge/license-MIT-yellow?style=flat-square)
+![Version](https://img.shields.io/badge/version-1.0.0-blue?style=flat-square)
+![Plugins](https://img.shields.io/badge/plugins-3-brightgreen?style=flat-square)
+![Kimi Code](https://img.shields.io/badge/Kimi%20Code-%E2%9C%85-8A2BE2?style=flat-square)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-orange?style=flat-square)](./CONTRIBUTING.md)
 
 ---
 
