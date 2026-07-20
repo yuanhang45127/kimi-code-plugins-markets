@@ -8,7 +8,7 @@
 
 ![License](https://img.shields.io/badge/license-MIT-yellow)
 ![Version](https://img.shields.io/badge/version-1.0.0-blue)
-![Plugins](https://img.shields.io/badge/plugins-4-brightgreen)
+![Plugins](https://img.shields.io/badge/plugins-7-brightgreen)
 ![Kimi Code](https://img.shields.io/badge/Kimi%20Code-compatible-8A2BE2)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-orange)](./CONTRIBUTING.md)
 
@@ -36,6 +36,9 @@ export KIMI_CODE_PLUGIN_MARKETPLACE_URL=https://codeup.aliyun.com/64e63304dba61e
 | 🔍 **Code Reviewer** | 轻量代码审查助手，含 session-start 指南 |
 | ✍️ **Commit Writer** | 根据暂存变更自动生成 conventional commit 消息 |
 | 🔊 **Completion Sound** | 任务完成时播放提示音，支持自定义音效 |
+| 📖 **Docs Lookup** | 实时库文档查询 — 从官方源拉取 API 文档，减少幻觉（移植自 Context7） |
+| 🧪 **Test Writer** | E2E/单元测试生成 — Playwright / Vitest / pytest（移植自 Playwright Plugin） |
+| 🔄 **Dev Workflows** | 结构化开发流程 — TDD / 代码审查 / 系统化调试（移植自 Superpowers） |
 
 ---
 
@@ -50,7 +53,10 @@ kimi-plugin-market/
 │   ├── hello-world/               # 最简示例插件
 │   ├── code-reviewer/             # 代码审查助手
 │   ├── commit-writer/             # commit 消息生成器
-│   └── completion-sound/          # 完成提示音
+│   ├── completion-sound/          # 完成提示音
+│   ├── docs-lookup/               # 实时文档查询（移植自 Context7）
+│   ├── test-writer/               # 测试生成（移植自 Playwright Plugin）
+│   └── dev-workflows/             # 结构化开发流程（移植自 Superpowers）
 ├── SECURITY.md                    # 安全策略
 ├── CONTRIBUTING.md                # 贡献指南
 └── README.md                      # 本文件

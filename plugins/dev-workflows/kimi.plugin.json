@@ -1,0 +1,20 @@
+{
+  "name": "dev-workflows",
+  "version": "1.0.0",
+  "description": "Structured development workflows — TDD, code review, and systematic debugging patterns for consistent agent behaviour",
+  "keywords": ["tdd", "code-review", "debugging", "workflow", "best-practices"],
+  "author": "Kimi Plugin Community",
+  "skills": "./skills",
+  "commands": "./commands",
+  "sessionStart": {
+    "skill": "tdd-workflow"
+  },
+  "interface": {
+    "displayName": "Dev Workflows",
+    "shortDescription": "Structured TDD, review, and debugging workflows for consistent agent behaviour",
+    "longDescription": "Dev Workflows reframes Kimi from a single assistant into a structured development partner. It ships curated workflows for:\n\n- **TDD (Red/Green/Refactor)**: Write the test first, run it, make it pass, then clean up\n- **Code Review**: Systematic code review with structured output\n- **Systematic Debugging**: Methodical approach to diagnosing and fixing bugs\n\nThese workflows produce consistent, high-quality results regardless of the task complexity.\n\nUsage examples:\n- \"Let's TDD a new function for calculating shipping costs\"\n- \"Review my latest commit\"\n- \"Debug this test failure\"",
+    "developerName": "Kimi Plugin Community",
+    "websiteURL": "https://github.com/yuanhang45127/kimi-plugin-template"
+  },
+  "skillInstructions": "When the user asks to work on code, default to structured workflows: TDD for new features, systematic review for existing code, methodical debugging for bugs. Always explain the workflow step you're on before executing."
+}

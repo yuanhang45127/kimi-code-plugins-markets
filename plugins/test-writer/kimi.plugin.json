@@ -1,0 +1,20 @@
+{
+  "name": "test-writer",
+  "version": "1.0.0",
+  "description": "E2E and integration test authoring assistant — generates Playwright, Vitest, and pytest tests from natural language specs",
+  "keywords": ["testing", "playwright", "vitest", "pytest", "e2e", "tdd"],
+  "author": "Kimi Plugin Community",
+  "skills": "./skills",
+  "commands": "./commands",
+  "sessionStart": {
+    "skill": "write-tests"
+  },
+  "interface": {
+    "displayName": "Test Writer",
+    "shortDescription": "E2E test authoring — Playwright, Vitest, pytest from natural language specs",
+    "longDescription": "Test Writer helps Kimi generate, run, and debug tests from natural language descriptions.\n\nFeatures:\n- Generates Playwright E2E tests from feature descriptions\n- Creates Vitest/ Jest unit and integration tests\n- Creates pytest tests with fixtures and parametrization\n- Understands test coverage and suggests edge cases\n- Supports cross-browser testing patterns (Chromium, Firefox, WebKit)\n\nUsage examples:\n- \"Write an E2E test for the login flow\"\n- \"Add unit tests for the user service\"\n- \"Generate pytest tests for the API endpoints\"",
+    "developerName": "Kimi Plugin Community",
+    "websiteURL": "https://github.com/yuanhang45127/kimi-plugin-template"
+  },
+  "skillInstructions": "When generating tests, always: 1) cover the happy path first, 2) add at least 2 edge cases, 3) include error/negative scenarios, 4) make tests independent and idempotent. Prefer the testing framework already used in the project."
+}

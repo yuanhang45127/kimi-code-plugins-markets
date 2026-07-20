@@ -1,0 +1,20 @@
+{
+  "name": "docs-lookup",
+  "version": "1.0.0",
+  "description": "Fetches live library documentation from official sources — eliminates hallucinations about API signatures and usage",
+  "keywords": ["docs", "documentation", "reference", "library", "context"],
+  "author": "Kimi Plugin Community",
+  "skills": "./skills",
+  "commands": "./commands",
+  "sessionStart": {
+    "skill": "lookup-docs"
+  },
+  "interface": {
+    "displayName": "Docs Lookup",
+    "shortDescription": "Live library documentation lookup — reduces hallucinations on API usage",
+    "longDescription": "Docs Lookup helps Kimi fetch accurate, up-to-date library documentation from official sources.\n\nFeatures:\n- Automatically fetches docs when you ask about a library's API\n- Version-aware: specify which library version to look up\n- Covers npm, PyPI, Go, Rust, and most major ecosystems\n- Reduces hallucinations: Kimi reads real docs instead of guessing\n\nUsage examples:\n- \"How do I use the new React 19 use() hook?\"\n- \"What's the correct signature for Next.js 15 generateStaticParams?\"\n- \"Show me how to use Pydantic v2 Field validators\"",
+    "developerName": "Kimi Plugin Community",
+    "websiteURL": "https://github.com/yuanhang45127/kimi-plugin-template"
+  },
+  "skillInstructions": "When answering questions about library usage, always check if the official documentation should be fetched first. Prioritise official sources (npm, PyPI, crates.io, pkg.go.dev, readthedocs) over memory."
+}

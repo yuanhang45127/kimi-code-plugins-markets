@@ -8,7 +8,7 @@
 
 ![License](https://img.shields.io/badge/license-MIT-yellow)
 ![Version](https://img.shields.io/badge/version-1.0.0-blue)
-![Plugins](https://img.shields.io/badge/plugins-4-brightgreen)
+![Plugins](https://img.shields.io/badge/plugins-7-brightgreen)
 ![Kimi Code](https://img.shields.io/badge/Kimi%20Code-compatible-8A2BE2)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-orange)](./CONTRIBUTING.md)
 
@@ -36,6 +36,9 @@ export KIMI_CODE_PLUGIN_MARKETPLACE_URL=https://codeup.aliyun.com/64e63304dba61e
 | 🔍 **Code Reviewer** | Lightweight code review assistant with session-start guidelines |
 | ✍️ **Commit Writer** | Generates conventional commit messages from staged changes |
 | 🔊 **Completion Sound** | Plays a configurable sound when the assistant finishes a response |
+| 📖 **Docs Lookup** | Live library docs lookup from official sources — cuts hallucinations (ported from Context7) |
+| 🧪 **Test Writer** | E2E/unit test generation — Playwright / Vitest / pytest (ported from Playwright Plugin) |
+| 🔄 **Dev Workflows** | Structured TDD / code review / debugging workflows (ported from Superpowers) |
 
 ---
 
@@ -50,7 +53,10 @@ kimi-plugin-market/
 │   ├── hello-world/               # Demo plugin
 │   ├── code-reviewer/             # Code review assistant
 │   ├── commit-writer/             # Commit message generator
-│   └── completion-sound/          # Completion sound
+│   ├── completion-sound/          # Completion sound
+│   ├── docs-lookup/               # Live docs lookup (ported from Context7)
+│   ├── test-writer/               # Test generation (ported from Playwright Plugin)
+│   └── dev-workflows/             # Structured dev workflows (ported from Superpowers)
 ├── SECURITY.md                    # Security policy
 ├── CONTRIBUTING.md                # Contributing guide
 └── README.md                      # This file

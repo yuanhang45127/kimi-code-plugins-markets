@@ -25,6 +25,24 @@
       "displayName": "Completion Sound",
       "shortDescription": "Play a configurable sound when the assistant finishes a response",
       "source": "./plugins/completion-sound"
+    },
+    {
+      "id": "docs-lookup",
+      "displayName": "Docs Lookup",
+      "shortDescription": "Live library documentation lookup — reduces hallucinations on API signatures",
+      "source": "./plugins/docs-lookup"
+    },
+    {
+      "id": "test-writer",
+      "displayName": "Test Writer",
+      "shortDescription": "E2E and integration test authoring — Playwright, Vitest, pytest from natural language",
+      "source": "./plugins/test-writer"
+    },
+    {
+      "id": "dev-workflows",
+      "displayName": "Dev Workflows",
+      "shortDescription": "Structured TDD, code review, and debugging workflows for consistent agent behaviour",
+      "source": "./plugins/dev-workflows"
     }
   ]
 }
