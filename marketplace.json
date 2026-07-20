@@ -43,6 +43,12 @@
       "displayName": "Dev Workflows",
       "shortDescription": "Structured TDD, code review, and debugging workflows for consistent agent behaviour",
       "source": "./plugins/dev-workflows"
+    },
+    {
+      "id": "kimi-quota",
+      "displayName": "Kimi Quota",
+      "shortDescription": "Query Kimi Code weekly quota, 5h rolling limit, and Extra Usage balance via MCP tool",
+      "source": "./plugins/kimi-quota"
     }
   ]
 }

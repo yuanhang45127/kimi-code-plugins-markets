@@ -1,0 +1,16 @@
+{
+  "name": "kimi-quota",
+  "version": "1.0.0",
+  "description": "Query Kimi Code quota: weekly usage, 5-hour rate limit, and Extra Usage balance",
+  "interface": {
+    "displayName": "Kimi Quota",
+    "shortDescription": "Check your weekly quota, 5h rolling limit, and Extra Usage wallet",
+    "longDescription": "Exposes a `get_quota` MCP tool that calls the official Kimi Code usage API and returns your weekly usage, 5-hour rolling rate-limit status, and Extra Usage (booster wallet) balance. Install, enable, then ask the agent \"how's my quota\" or \"check my usage\"."
+  },
+  "mcpServers": {
+    "quota": {
+      "command": "python3",
+      "args": ["./mcp/quota_server.py"]
+    }
+  }
+}
