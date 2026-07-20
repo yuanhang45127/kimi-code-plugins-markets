@@ -159,6 +159,25 @@ Key restrictions:
 
 ---
 
+## Security
+
+> **⚠️ Community plugins are third-party software.** They are not reviewed or endorsed by Moonshot AI / Kimi Code.
+
+This repository implements basic safety measures to reduce risk:
+
+- **PR review checklist** — Every new plugin is reviewed for obfuscated code, unsafe paths, suspicious network calls, and prompt injection
+- **Kimi Code's built-in sandbox** — Plugin paths are confined to the plugin root directory; hooks only run when the plugin is enabled
+- **Trust badges** — Kimi Code labels plugins from this repo as `third-party`, which requires explicit user confirmation to install
+
+For the full security policy, reporting process, and review checklist, see **[SECURITY.md](./SECURITY.md)**.
+
+Before installing any community plugin, consider:
+- Review the plugin's source files in this repo
+- Check what MCP servers or hooks it declares
+- Disable MCP servers you don't trust via `/plugins mcp disable <id> <server>`
+
+---
+
 ## Local Development
 
 ```bash
