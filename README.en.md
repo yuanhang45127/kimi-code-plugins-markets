@@ -1,13 +1,23 @@
+<div align="center">
+
 <!-- Language Switch / 语言切换 -->
 [中文](./README.md) | [**English**](./README.en.md)
 
----
+<br>
 
-# Kimi Plugin Template & Marketplace
+# 🧩 Kimi Plugin Market
 
-A **Kimi Code plugin marketplace** repository — hosts community-contributed plugins and provides a reusable template for building new ones.
+**Kimi Code Community Plugin Marketplace** — Host & share Kimi Code plugins
 
-Browse the [official Kimi Code docs](https://www.kimi.com/code/docs/en/) for more about the platform.
+<br>
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](./LICENSE)
+[![Version](https://img.shields.io/badge/version-1.0.0-blue.svg?style=flat-square)](./marketplace.json)
+[![Plugins](https://img.shields.io/badge/plugins-3-green.svg?style=flat-square)](#-available-plugins)
+[![Kimi Code](https://img.shields.io/badge/Kimi%20Code-%E2%9C%93%20compatible-8A2BE2?style=flat-square)](https://www.kimi.com/code/docs/en/)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](./CONTRIBUTING.md)
+
+</div>
 
 ---
 
