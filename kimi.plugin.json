@@ -1,0 +1,10 @@
+{
+  "name": "kimi-plugin-template",
+  "version": "1.0.0",
+  "description": "A minimal Kimi Code plugin template with an example skill",
+  "skills": "./skills",
+  "interface": {
+    "displayName": "Kimi Plugin Template",
+    "shortDescription": "Minimal template for building Kimi Code plugins"
+  }
+}
