@@ -19,13 +19,13 @@
 Load this marketplace in Kimi Code:
 
 ```bash
-/plugins marketplace https://codeup.aliyun.com/64e63304dba61e96ebf62138/kimi-plugin-market/-/raw/main/marketplace.json
+/plugins marketplace https://raw.githubusercontent.com/yuanhang45127/kimi-code-plugins-markets/main/marketplace.json
 ```
 
 Set as default:
 
 ```bash
-export KIMI_CODE_PLUGIN_MARKETPLACE_URL=https://codeup.aliyun.com/64e63304dba61e96ebf62138/kimi-plugin-market/-/raw/main/marketplace.json
+export KIMI_CODE_PLUGIN_MARKETPLACE_URL=https://raw.githubusercontent.com/yuanhang45127/kimi-code-plugins-markets/main/marketplace.json
 ```
 
 ### 📦 Available Plugins

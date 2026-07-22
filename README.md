@@ -19,13 +19,13 @@
 在 Kimi Code 中加载本市场：
 
 ```bash
-/plugins marketplace https://codeup.aliyun.com/64e63304dba61e96ebf62138/kimi-plugin-market/-/raw/main/marketplace.json
+/plugins marketplace https://raw.githubusercontent.com/yuanhang45127/kimi-code-plugins-markets/main/marketplace.json
 ```
 
 设为默认市场：
 
 ```bash
-export KIMI_CODE_PLUGIN_MARKETPLACE_URL=https://codeup.aliyun.com/64e63304dba61e96ebf62138/kimi-plugin-market/-/raw/main/marketplace.json
+export KIMI_CODE_PLUGIN_MARKETPLACE_URL=https://raw.githubusercontent.com/yuanhang45127/kimi-code-plugins-markets/main/marketplace.json
 ```
 
 ### 📦 可用插件
