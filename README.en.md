@@ -19,13 +19,13 @@
 Load this marketplace in Kimi Code:
 
 ```bash
-/plugins marketplace https://cdn.jsdelivr.net/gh/yuanhang45127/kimi-code-plugins-markets@main/marketplace.json
+/plugins marketplace https://ghproxy.net/https://raw.githubusercontent.com/yuanhang45127/kimi-code-plugins-markets/main/marketplace.json
 ```
 
 Set as default:
 
 ```bash
-export KIMI_CODE_PLUGIN_MARKETPLACE_URL=https://cdn.jsdelivr.net/gh/yuanhang45127/kimi-code-plugins-markets@main/marketplace.json
+export KIMI_CODE_PLUGIN_MARKETPLACE_URL=https://ghproxy.net/https://raw.githubusercontent.com/yuanhang45127/kimi-code-plugins-markets/main/marketplace.json
 ```
 
 ### 📦 Available Plugins

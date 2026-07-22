@@ -6,49 +6,49 @@
       "id": "hello-world",
       "displayName": "Hello World",
       "shortDescription": "A friendly greeting plugin — great starting point for learning plugin development",
-      "source": "https://cdn.jsdelivr.net/gh/yuanhang45127/kimi-code-plugins-markets@main/dist/hello-world.zip"
+      "source": "https://ghproxy.net/https://raw.githubusercontent.com/yuanhang45127/kimi-code-plugins-markets/main/dist/hello-world.zip"
     },
     {
       "id": "code-reviewer",
       "displayName": "Code Reviewer",
       "shortDescription": "Lightweight code review assistant — checks style, potential bugs, and best practices",
-      "source": "https://cdn.jsdelivr.net/gh/yuanhang45127/kimi-code-plugins-markets@main/dist/code-reviewer.zip"
+      "source": "https://ghproxy.net/https://raw.githubusercontent.com/yuanhang45127/kimi-code-plugins-markets/main/dist/code-reviewer.zip"
     },
     {
       "id": "commit-writer",
       "displayName": "Commit Writer",
       "shortDescription": "Automatically generates conventional commit messages from staged changes",
-      "source": "https://cdn.jsdelivr.net/gh/yuanhang45127/kimi-code-plugins-markets@main/dist/commit-writer.zip"
+      "source": "https://ghproxy.net/https://raw.githubusercontent.com/yuanhang45127/kimi-code-plugins-markets/main/dist/commit-writer.zip"
     },
     {
       "id": "completion-sound",
       "displayName": "Completion Sound",
       "shortDescription": "Play a configurable sound when the assistant finishes a response",
-      "source": "https://cdn.jsdelivr.net/gh/yuanhang45127/kimi-code-plugins-markets@main/dist/completion-sound.zip"
+      "source": "https://ghproxy.net/https://raw.githubusercontent.com/yuanhang45127/kimi-code-plugins-markets/main/dist/completion-sound.zip"
     },
     {
       "id": "docs-lookup",
       "displayName": "Docs Lookup",
       "shortDescription": "Live library documentation lookup — reduces hallucinations on API signatures",
-      "source": "https://cdn.jsdelivr.net/gh/yuanhang45127/kimi-code-plugins-markets@main/dist/docs-lookup.zip"
+      "source": "https://ghproxy.net/https://raw.githubusercontent.com/yuanhang45127/kimi-code-plugins-markets/main/dist/docs-lookup.zip"
     },
     {
       "id": "test-writer",
       "displayName": "Test Writer",
       "shortDescription": "E2E and integration test authoring — Playwright, Vitest, pytest from natural language",
-      "source": "https://cdn.jsdelivr.net/gh/yuanhang45127/kimi-code-plugins-markets@main/dist/test-writer.zip"
+      "source": "https://ghproxy.net/https://raw.githubusercontent.com/yuanhang45127/kimi-code-plugins-markets/main/dist/test-writer.zip"
     },
     {
       "id": "dev-workflows",
       "displayName": "Dev Workflows",
       "shortDescription": "Structured TDD, code review, and debugging workflows for consistent agent behaviour",
-      "source": "https://cdn.jsdelivr.net/gh/yuanhang45127/kimi-code-plugins-markets@main/dist/dev-workflows.zip"
+      "source": "https://ghproxy.net/https://raw.githubusercontent.com/yuanhang45127/kimi-code-plugins-markets/main/dist/dev-workflows.zip"
     },
     {
       "id": "kimi-quota",
       "displayName": "Kimi Quota",
       "shortDescription": "Query Kimi Code weekly quota, 5h rolling limit, and Extra Usage balance via MCP tool",
-      "source": "https://cdn.jsdelivr.net/gh/yuanhang45127/kimi-code-plugins-markets@main/dist/kimi-quota.zip"
+      "source": "https://ghproxy.net/https://raw.githubusercontent.com/yuanhang45127/kimi-code-plugins-markets/main/dist/kimi-quota.zip"
     }
   ]
 }
