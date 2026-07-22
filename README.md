@@ -8,7 +8,7 @@
 
 ![License](https://img.shields.io/badge/license-MIT-yellow)
 ![Version](https://img.shields.io/badge/version-1.0.0-blue)
-![Plugins](https://img.shields.io/badge/plugins-7-brightgreen)
+![Plugins](https://img.shields.io/badge/plugins-8-brightgreen)
 ![Kimi Code](https://img.shields.io/badge/Kimi%20Code-compatible-8A2BE2)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-orange)](./CONTRIBUTING.md)
 
@@ -39,6 +39,7 @@ export KIMI_CODE_PLUGIN_MARKETPLACE_URL=https://ghproxy.net/https://raw.githubus
 | 📖 **Docs Lookup** | 实时库文档查询 — 从官方源拉取 API 文档，减少幻觉（移植自 Context7） |
 | 🧪 **Test Writer** | E2E/单元测试生成 — Playwright / Vitest / pytest（移植自 Playwright Plugin） |
 | 🔄 **Dev Workflows** | 结构化开发流程 — TDD / 代码审查 / 系统化调试（移植自 Superpowers） |
+| 📊 **Kimi Quota** | 查询 Kimi Code 周配额、5 小时滚动限额与 Extra Usage 余额（MCP 工具） |
 
 ---
 
@@ -56,7 +57,9 @@ kimi-plugin-market/
 │   ├── completion-sound/          # 完成提示音
 │   ├── docs-lookup/               # 实时文档查询（移植自 Context7）
 │   ├── test-writer/               # 测试生成（移植自 Playwright Plugin）
-│   └── dev-workflows/             # 结构化开发流程（移植自 Superpowers）
+│   ├── dev-workflows/             # 结构化开发流程（移植自 Superpowers）
+│   └── kimi-quota/                # 配额查询（MCP 工具）
+├── dist/                          # 插件 zip 安装包（scripts/release.sh 生成）
 ├── SECURITY.md                    # 安全策略
 ├── CONTRIBUTING.md                # 贡献指南
 └── README.md                      # 本文件
